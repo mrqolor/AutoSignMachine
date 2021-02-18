@@ -116,7 +116,7 @@ let scheduler = {
             }
         }
         for (let task of queues) {
-            console.log('将执行任务', task.taskName, '执行时间', task.willTime)
+            #console.log('将执行任务', task.taskName, '执行时间', task.willTime)
             if (task.taskState === 0 && moment(task.willTime).isBefore(moment(), 'minutes')) {
                 will_queues.push(task)
             }

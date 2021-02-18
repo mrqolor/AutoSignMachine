@@ -111,7 +111,7 @@ var start = async (params) => {
   }, {
     isCircle: true,
     intervalTime: 4 * 3600,
-    //...taskOption
+    ...taskOption
   })
 
   // 首页-签到有礼-免费抽-拆华为Pad(去抽奖)

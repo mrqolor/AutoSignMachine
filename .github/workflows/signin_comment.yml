@@ -1,5 +1,5 @@
-#每日签到积分
-name: dailysignin
+#每日签到积分 + 每日评论积分
+name: signin_comment
   
 on:
   #push: # push触发
@@ -77,6 +77,6 @@ jobs:
         user: ${{secrets.unicom_user}}
         password: ${{secrets.unicom_password}}
         appid: ${{secrets.unicom_appid}}
-      run: node index.js unicom --user=${user} --password=${password} --appid=${appid} --tryrun --tasks dailysignin
+      run: node index.js unicom --user=${user} --password=${password} --appid=${appid} --tryrun --tasks dailysignin,dailycomment
       #run: node index.js unicom --user=${user} --password=${password} --appid=${appid}
 
